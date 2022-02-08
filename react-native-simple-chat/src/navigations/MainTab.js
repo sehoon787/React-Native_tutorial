@@ -30,7 +30,7 @@ const MainTab = ({ navigation, route }) => {
           headerRight: () =>
             title === 'Channels' && (
               <MaterialIcons
-                name="add"
+                name="create"
                 size={26}
                 style={{ margin: 10 }}
                 onPress={() => navigation.navigate('Channel Creation')}
