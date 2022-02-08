@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Simple Chat",
+    "slug": "react-native-simple-chat",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3679fe"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.aircok.rsnimplechat",
+      "buildNumber": "1.0.0",
+      "supportsTablet": false,
+      "infoPlist":{
+        "NSPhotoLibraryUsageDescription": "The app accesses to photo album to upload your profile photo when you are signing up or updating the profile."
+      }
+    },
+    "android": {
+      "package": "com.aircok.rsnimplechat",
+      "versionCode": 1,
+      "permissions": ["CAMERA"],
+      "icon": "./assets/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
