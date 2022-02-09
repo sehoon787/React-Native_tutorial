@@ -25,17 +25,25 @@
       }
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true,
       "package": "com.aircok.rsnimplechat",
       "versionCode": 1,
-      "permissions": ["CAMERA"],
+      "permissions": ["CAMERA", "NOTIFICATIONS"],
       "icon": "./assets/icon.png",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/pika.png",
+          "color": "#ffffff"
+        }
+      ]
+    ]
   }
 }
